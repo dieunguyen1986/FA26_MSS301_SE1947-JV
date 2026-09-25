@@ -1,10 +1,13 @@
 package fu.ats.service;
 
 import fu.ats.dto.CandidateRequest;
+import fu.ats.dto.CandidateResponse;
 import fu.ats.entity.CandidateSkillId;
 import fu.ats.entity.CandidateSkills;
 import fu.ats.entity.Candidates;
 import fu.ats.entity.Skills;
+import fu.ats.exception.ResourceNotFoundException;
+import fu.ats.mapper.CandidateMapper;
 import fu.ats.repository.CandidateRepository;
 import fu.ats.repository.CandidateSkillsRepository;
 import fu.ats.repository.SkillRepository;
@@ -24,11 +27,12 @@ public class CandidateServiceImpl implements CandidateService {
     private final CandidateRepository candidateRepository;
     private final CandidateSkillsRepository candidateSkillsRepository;
     private final SkillRepository skillRepository;
+    private final CandidateMapper candidateMapper;
 
     @Override
     @Transactional
     public Candidates save(CandidateRequest request) {
-        Candidates savedCandidate = candidateRepository.save(toCandidate(request));
+        Candidates savedCandidate = candidateRepository.save(toEntity(request));
 
         List<UUID> requestedSkillIds = request.getSkillIds() == null
                 ? List.of()
@@ -55,7 +59,17 @@ public class CandidateServiceImpl implements CandidateService {
         return savedCandidate;
     }
 
-    private Candidates toCandidate(CandidateRequest request) {
+    @Transactional(readOnly = true)
+    @Override
+    public CandidateResponse findById(UUID candidateId) {
+        Candidates candidates = candidateRepository.findById(candidateId).orElseThrow(() -> {
+                    return new ResourceNotFoundException("Candidate not found with id: " + candidateId);
+                }
+        );
+        return candidateMapper.toDto(candidates);
+    }
+
+    private Candidates toEntity(CandidateRequest request) {
         Candidates candidate = Candidates.builder()
                 .email(request.getEmail())
                 .fullName(request.getFullName())
