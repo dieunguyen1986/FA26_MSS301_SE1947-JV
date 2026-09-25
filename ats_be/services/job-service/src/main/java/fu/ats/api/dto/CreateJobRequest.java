@@ -11,7 +11,7 @@ public record CreateJobRequest(
         @NotBlank @Size(max = 255) String title,
         @NotBlank String description,
         @NotNull Long recruiterId,
-        @NotNull Long departmentId,
+        @NotNull UUID departmentId,
         @NotBlank @Size(max = 255) String location,
         @NotBlank String employmentType,
         @NotBlank String workMode,

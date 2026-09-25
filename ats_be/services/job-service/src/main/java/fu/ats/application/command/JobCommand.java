@@ -5,9 +5,9 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
-public record JobCommand(UUID id, String title,
+public record JobCommand(String title,
                          String description,
-                         Long departmentId,
+                         UUID departmentId,
                          Long recruiterId,
                          String location,
                          String employmentType,

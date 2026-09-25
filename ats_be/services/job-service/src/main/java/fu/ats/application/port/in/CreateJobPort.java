@@ -2,7 +2,8 @@ package fu.ats.application.port.in;
 
 import fu.ats.api.dto.JobResponse;
 import fu.ats.application.command.JobCommand;
+import fu.ats.domain.aggregate.JobAggregate;
 
 public interface CreateJobPort {
-    JobResponse execute(JobCommand jobCommand);
+    JobAggregate execute(JobCommand jobCommand);
 }

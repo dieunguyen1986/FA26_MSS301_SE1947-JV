@@ -5,55 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0b111de-6f93-4c64-b1fd-efbca4b2efc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/CandidateServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/dto/CandidateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/mapper/CandidateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/api/api.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/api/dto/CreateJobRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/api/dto/JobResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/api/dto/JobSearchRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/api/dto/UpdateJobRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/infras.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/entity/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/entity/JobStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/persistence.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/JobServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/api.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/applicationm.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/port/in/CreateJobPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/port/in/PublishJobPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/port/port.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/domain.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/repository/JobRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/adapter/JobRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/infras.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/JobStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/SalaryRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/persistence.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/candidate-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/candidate-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/controller/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/controller/CandidateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/service/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/service/CandidateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/service/CandidateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/candidate-service/src/main/java/fu/ats/service/CandidateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/candidate-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/candidate-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cv-parse-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/cv-parse-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/application/applicationm.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/dto/CreateJobRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/dto/CreateJobRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/command/JobCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/command/JobCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/domain/domain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/port/in/CreateJobPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/port/in/CreateJobPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/service/CreateJobUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/service/CreateJobUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/aggregate/JobAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/aggregate/JobAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/repository/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/repository/JobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/adapter/JobRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/adapter/JobRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +27,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="44" />
+    <option name="cachedIndexableFilesCount" value="90" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000099009898" />
-      <entry key="S10" value="1.0002393216700878" />
-      <entry key="S30" value="1.229996010739481" />
-      <entry key="S60" value="2.5431033548167474" />
-      <entry key="M2" value="6.364076636116533" />
-      <entry key="M5" value="20.29840406762965" />
-      <entry key="M10" value="41.659914129551176" />
-      <entry key="M15" value="58.80289565316994" />
-      <entry key="M30" value="96.25741601393867" />
-      <entry key="H1" value="146.60372558063008" />
-      <entry key="H2" value="211.37138958561468" />
-      <entry key="H4" value="304.7468001039876" />
-      <entry key="D1" value="564.1975350902791" />
-      <entry key="W1" value="654.6795839156013" />
+      <entry key="MS100" value="2.9684779144068587E-111" />
+      <entry key="MS500" value="1.7308065986634562E-22" />
+      <entry key="S2" value="8.232749523950973E-6" />
+      <entry key="S5" value="0.01788439142220232" />
+      <entry key="S10" value="0.23417235374275264" />
+      <entry key="S30" value="1.6486656756442" />
+      <entry key="S60" value="5.228149594266687" />
+      <entry key="M2" value="16.465757817073925" />
+      <entry key="M5" value="45.40272540990817" />
+      <entry key="M10" value="72.66087940207912" />
+      <entry key="M15" value="87.88706297900092" />
+      <entry key="M30" value="114.10889350043418" />
+      <entry key="H1" value="160.95797084037045" />
+      <entry key="H2" value="246.6436240659772" />
+      <entry key="H4" value="371.77860590000085" />
+      <entry key="D1" value="713.970172281978" />
+      <entry key="W1" value="838.746946146622" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.9529443922336088E-276" />
-      <entry key="MS500" value="7.835217447115523E-56" />
-      <entry key="S2" value="1.673890564411394E-14" />
-      <entry key="S5" value="3.235195061260279E-6" />
-      <entry key="S10" value="0.002219743918931591" />
-      <entry key="S30" value="0.3232567792700452" />
-      <entry key="S60" value="1.9293544010996433" />
-      <entry key="M2" value="7.8749913650633605" />
-      <entry key="M5" value="28.04186952275967" />
-      <entry key="M10" value="51.28862552373962" />
-      <entry key="M15" value="67.52584582790404" />
-      <entry key="M30" value="98.90212715607561" />
-      <entry key="H1" value="130.68932710527562" />
-      <entry key="H2" value="161.28959221643743" />
-      <entry key="H4" value="206.54148333643195" />
-      <entry key="D1" value="349.0519448581441" />
-      <entry key="W1" value="400.98994163026475" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000011108318703" />
+      <entry key="S2" value="1.0578889862714171" />
+      <entry key="S5" value="1.3688697800592773" />
+      <entry key="S10" value="2.0053544067524642" />
+      <entry key="S30" value="4.496107119482822" />
+      <entry key="S60" value="6.670434925300289" />
+      <entry key="M2" value="8.914098435620948" />
+      <entry key="M5" value="11.857338718416717" />
+      <entry key="M10" value="13.577630958009411" />
+      <entry key="M15" value="14.390458696908718" />
+      <entry key="M30" value="18.936794362674394" />
+      <entry key="H1" value="41.36258545269268" />
+      <entry key="H2" value="87.63625202958015" />
+      <entry key="H4" value="153.99520432726095" />
+      <entry key="D1" value="343.05999369604086" />
+      <entry key="W1" value="414.1079274478946" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.03639792457713925" />
-      <entry key="MS500" value="0.5154841593973943" />
-      <entry key="S2" value="0.8473324349461206" />
-      <entry key="S5" value="0.9358845018700359" />
-      <entry key="S10" value="0.9692680644655685" />
-      <entry key="S30" value="1.5196890997139132" />
-      <entry key="S60" value="4.40421928778313" />
-      <entry key="M2" value="14.11210599536661" />
-      <entry key="M5" value="48.171751917786736" />
-      <entry key="M10" value="92.79403382758342" />
-      <entry key="M15" value="126.1903259956213" />
-      <entry key="M30" value="195.05196582138072" />
-      <entry key="H1" value="277.21720693857395" />
-      <entry key="H2" value="372.6118282139265" />
-      <entry key="H4" value="511.25577751261346" />
-      <entry key="D1" value="913.240095323148" />
-      <entry key="W1" value="1055.6679812690777" />
+      <entry key="MS100" value="2.4616752905948683E-5" />
+      <entry key="MS500" value="0.11974264534708494" />
+      <entry key="S2" value="0.617694052549869" />
+      <entry key="S5" value="1.1063367438424585" />
+      <entry key="S10" value="2.0064213291750526" />
+      <entry key="S30" value="5.96256455037205" />
+      <entry key="S60" value="11.76741476418628" />
+      <entry key="M2" value="25.295672944080394" />
+      <entry key="M5" value="57.21752482546025" />
+      <entry key="M10" value="86.21469202432439" />
+      <entry key="M15" value="102.26072710042502" />
+      <entry key="M30" value="133.03282609259438" />
+      <entry key="H1" value="202.30116474326138" />
+      <entry key="H2" value="334.2557880912282" />
+      <entry key="H4" value="525.7509963231761" />
+      <entry key="D1" value="1057.021196196408" />
+      <entry key="W1" value="1252.8533153881638" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -152,41 +113,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.candidate-service.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dieunt/Documents/FPTU/1_Training/26_FA/MSS301_SE1947/Projects/ats_be/services/cv-parse-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/dieunt/Documents/FPTU/1_Training/26_FA/MSS301_SE1947/Projects/ats_be/services/notification-service/src/main/java/fu/he123456/Main.java",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.candidate-service.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dieunt/Documents/FPTU/1_Training/26_FA/MSS301_SE1947/Projects/ats_be/services/cv-parse-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/dieunt/Documents/FPTU/1_Training/26_FA/MSS301_SE1947/Projects/ats_be/services/notification-service/src/main/java/fu/he123456/Main.java&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/services/cv-parse-service/src/main/resources" />
@@ -237,7 +198,8 @@
       <workItem from="1789811279673" duration="3028000" />
       <workItem from="1790005685268" duration="2240000" />
       <workItem from="1790072008262" duration="1720000" />
-      <workItem from="1790313281190" duration="9016000" />
+      <workItem from="1790313281190" duration="9219000" />
+      <workItem from="1790324986563" duration="2476000" />
     </task>
     <servers />
   </component>

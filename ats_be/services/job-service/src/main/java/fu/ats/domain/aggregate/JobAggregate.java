@@ -1,88 +1,113 @@
 package fu.ats.domain.aggregate;
 
-import fu.ats.infrastructure.persistence.entity.Job;
-import fu.ats.infrastructure.persistence.entity.JobStatus;
-import fu.ats.infrastructure.persistence.entity.SalaryRange;
+import fu.ats.domain.model.JobStatus;
+import fu.ats.domain.valueobject.SalaryRange;
 import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 @Getter
-public class JobAggregate {
-    private UUID id;
-    private Long departmentId;
-    private Long recruiterId;
-    private String title;
-
-    private String description;
-    private String location;
-
-    private SalaryRange salaryRange;
+public final class JobAggregate {
+    private final UUID id;
+    private final UUID departmentId;
+    private final Long recruiterId;
+    private final String title;
+    private final String description;
+    private final String location;
+    private final String employmentType;
+    private final String workMode;
+    private final String currency;
+    private final SalaryRange salaryRange;
+    private final LocalDate deadline;
+    private final List<UUID> skillIds;
     private JobStatus status;
-    private String utmSource;
-    private String utmMedium;
-    private LocalDate deadline;
-    private List<UUID> skillIds;
 
-    private JobAggregate() {
-
+    private JobAggregate(UUID id,
+                          String title,
+                          String description,
+                          UUID departmentId,
+                          Long recruiterId,
+                          String location,
+                          String employmentType,
+                          String workMode,
+                          BigDecimal salaryMin,
+                          BigDecimal salaryMax,
+                          String currency,
+                          LocalDate deadline,
+                          List<UUID> skillIds) {
+        this.id = id == null ? UUID.randomUUID() : id;
+        this.title = requireText(title, "title");
+        this.description = requireText(description, "description");
+        this.departmentId = Objects.requireNonNull(departmentId, "departmentId is required");
+        this.recruiterId = Objects.requireNonNull(recruiterId, "recruiterId is required");
+        this.location = requireText(location, "location");
+        this.employmentType = requireText(employmentType, "employmentType");
+        this.workMode = requireText(workMode, "workMode");
+        this.currency = requireText(currency, "currency");
+        this.salaryRange = SalaryRange.of(salaryMin, salaryMax);
+        this.deadline = Objects.requireNonNull(deadline, "deadline is required");
+        this.skillIds = skillIds == null ? List.of() : List.copyOf(skillIds);
+        this.status = JobStatus.DRAFT;
     }
 
-    public static JobAggregate get(UUID id, String title,
-                                   String description,
-                                   Long departmentId,
-                                   Long recruiterId,
-                                   String location,
-                                   String employmentType,
-                                   String workMode,
-                                   BigDecimal salaryMin,
-                                   BigDecimal salaryMax,
-                                   String currency,
-                                   LocalDate applicationDeadline,
-                                   List<UUID> skillIds) {
-        JobAggregate jobAggregate = new JobAggregate();
-        jobAggregate.id = id;
-        jobAggregate.title = title;
-        jobAggregate.description = description;
-        jobAggregate.location = location;
-        jobAggregate.utmSource = employmentType;
-        jobAggregate.utmMedium = workMode;
-        jobAggregate.skillIds = skillIds;
-        jobAggregate.salaryRange = SalaryRange.salaryRange(salaryMin, salaryMax);
-        jobAggregate.recruiterId = recruiterId;
-        jobAggregate.departmentId = departmentId;
-        jobAggregate.deadline = applicationDeadline;
-        return jobAggregate;
-
-    }
-
-    public Job draft() {
-        if (skillIds == null) {
-            throw new NullPointerException("skillIds is null");
-        }
-
-        Job job = new Job();
-        job.setTitle(this.title);
-        job.setDeadline(this.deadline);
-        job.setDescription(this.description);
-        job.setLocation(this.location);
-        job.setStatus(JobStatus.DRAFT);
-        job.setUtmMedium(this.utmMedium);
-        job.setUtmSource(this.utmSource);
-
-        return job;
+    public static JobAggregate createDraft(UUID id,
+                                            String title,
+                                            String description,
+                                            UUID departmentId,
+                                            Long recruiterId,
+                                            String location,
+                                            String employmentType,
+                                            String workMode,
+                                            BigDecimal salaryMin,
+                                            BigDecimal salaryMax,
+                                            String currency,
+                                            LocalDate deadline,
+                                            List<UUID> skillIds) {
+        return new JobAggregate(
+                id,
+                title,
+                description,
+                departmentId,
+                recruiterId,
+                location,
+                employmentType,
+                workMode,
+                salaryMin,
+                salaryMax,
+                currency,
+                deadline,
+                skillIds
+        );
     }
 
     public void publish() {
-        if (this.status != JobStatus.DRAFT) {
-            throw new RuntimeException("Job status is not DRAFT");
-        }
-
+        ensureStatus(JobStatus.DRAFT);
         this.status = JobStatus.PUBLISHED;
+    }
+
+    public void close() {
+        if (this.status != JobStatus.PUBLISHED) {
+            throw new IllegalStateException("Only a published job can be closed");
+        }
+        this.status = JobStatus.CLOSED;
+    }
+
+    private void ensureStatus(JobStatus expectedStatus) {
+        if (this.status != expectedStatus) {
+            throw new IllegalStateException(
+                    "Job must be " + expectedStatus + " but was " + this.status
+            );
+        }
+    }
+
+    private static String requireText(String value, String fieldName) {
+        if (value == null || value.isBlank()) {
+            throw new IllegalArgumentException(fieldName + " is required");
+        }
+        return value.trim();
     }
 }

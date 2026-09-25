@@ -1,6 +1,5 @@
 package fu.ats.infrastructure.persistence.entity;
 
-import fu.ats.entity.Job;
 import jakarta.persistence.*;
 import lombok.*;
 
