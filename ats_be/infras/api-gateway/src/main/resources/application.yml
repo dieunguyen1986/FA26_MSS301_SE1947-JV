@@ -1,0 +1,40 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: job-service
+              uri: htpp://localhost:8081
+              predicates:
+                - Path=/api/v1/jobs
+            - id: candidate-service
+              uri: htpp://localhost:8082
+              predicates:
+                - Path=/api/v1/candidates
+            - id: notification-service
+              uri: htpp://localhost:8084
+              predicates:
+                - Path=/api/v1/notifications
+            - id: application-service
+              uri: htpp://localhost:8083
+              predicates:
+                - Path=/api/v1/applications
+#              filters:
+#                - args: RequestRateLimiter
+#                  name:
+#                    redis-rate-limiter.replenishRate: 10   # tokens added per second
+#                    redis-rate-limiter.burstCapacity: 20   # max tokens in the bucket
+#                    redis-rate-limiter.requestedTokens: 1  # tokens consumed per request
+#                    key-resolver: "#{@ipKeyResolver}"
+#                    deny-empty-key: true
+#                    empty-key-status-code: 403
+
+            - id: cv-parse-service
+              uri: htpp://localhost:8085
+              predicates:
+                - Path=/api/v1/cvparses

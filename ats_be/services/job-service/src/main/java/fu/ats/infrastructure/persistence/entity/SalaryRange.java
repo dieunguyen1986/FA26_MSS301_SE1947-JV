@@ -12,6 +12,9 @@ public class SalaryRange {
     private SalaryRange() {
     }
 
+    private SalaryRange(BigDecimal salaryMin, BigDecimal salaryMax) {
+    }
+
     public static SalaryRange salaryRange(BigDecimal salaryMin, BigDecimal salaryMax) {
         if (salaryMax == null || salaryMin == null) {
             throw new IllegalArgumentException("salaryMax or salaryMin is null");
@@ -20,5 +23,8 @@ public class SalaryRange {
         if (salaryMin.compareTo(salaryMax) > 0) {
             throw new IllegalArgumentException("salaryMin > salaryMax");
         }
+
+        return new SalaryRange(salaryMin, salaryMax);
     }
+
 }

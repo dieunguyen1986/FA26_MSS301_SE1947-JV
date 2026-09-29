@@ -16,6 +16,7 @@ public record JobCommand(String title,
                          BigDecimal salaryMax,
                          String currency,
                          LocalDate applicationDeadline,
-                         List<UUID> skillIds) {
+                         List<UUID> skillIds
+) {
 
 }
