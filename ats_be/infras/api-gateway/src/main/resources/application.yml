@@ -9,19 +9,19 @@ spring:
         webflux:
           routes:
             - id: job-service
-              uri: htpp://localhost:8081
+              uri: http://localhost:8081
               predicates:
                 - Path=/api/v1/jobs
             - id: candidate-service
-              uri: htpp://localhost:8082
+              uri: http://localhost:8082
               predicates:
                 - Path=/api/v1/candidates
             - id: notification-service
-              uri: htpp://localhost:8084
+              uri: http://localhost:8084
               predicates:
                 - Path=/api/v1/notifications
             - id: application-service
-              uri: htpp://localhost:8083
+              uri: http://localhost:8083
               predicates:
                 - Path=/api/v1/applications
 #              filters:
@@ -35,6 +35,6 @@ spring:
 #                    empty-key-status-code: 403
 
             - id: cv-parse-service
-              uri: htpp://localhost:8085
+              uri: http://localhost:8085
               predicates:
                 - Path=/api/v1/cvparses

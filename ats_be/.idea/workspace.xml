@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0b111de-6f93-4c64-b1fd-efbca4b2efc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/filters/LoggingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/DepartmentJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/JobJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/mapper/JobPersistenceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/32f02949-0689-4da0-80b3-a600f69b6aa4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/32f02949-0689-4da0-80b3-a600f69b6aa4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+    <list default="true" id="c0b111de-6f93-4c64-b1fd-efbca4b2efc2" name="Changes" comment="Api gateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infras/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/command/JobCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/application/command/JobCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/aggregate/JobAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/domain/aggregate/JobAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/adapter/JobRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/adapter/JobRepositoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/SalaryRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity/SalaryRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/filters/LoggingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/filters/LoggingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,61 +40,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.767019554039511E-51" />
-      <entry key="MS500" value="7.733969332746405E-11" />
-      <entry key="S2" value="0.0029655183207179464" />
-      <entry key="S5" value="0.09746310532839347" />
-      <entry key="S10" value="0.312192802931724" />
-      <entry key="S30" value="0.6983348836659443" />
-      <entry key="S60" value="1.0243290753982417" />
-      <entry key="M2" value="1.6214323967615434" />
-      <entry key="M5" value="4.7353503766952825" />
-      <entry key="M10" value="13.653372319253949" />
-      <entry key="M15" value="23.341372776823054" />
-      <entry key="M30" value="54.58584355549483" />
-      <entry key="H1" value="115.89066663148833" />
-      <entry key="H2" value="220.02557417748605" />
-      <entry key="H4" value="369.3574945222915" />
-      <entry key="D1" value="776.1935471209789" />
-      <entry key="W1" value="928.1931797521137" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000076538871633" />
+      <entry key="S5" value="1.0281229849738522" />
+      <entry key="S10" value="1.2259065980682227" />
+      <entry key="S30" value="2.2877224588898355" />
+      <entry key="S60" value="4.813472144559385" />
+      <entry key="M2" value="9.26984879547149" />
+      <entry key="M5" value="14.9089831869033" />
+      <entry key="M10" value="17.65510685271481" />
+      <entry key="M15" value="18.697514453123365" />
+      <entry key="M30" value="19.840958679959556" />
+      <entry key="H1" value="23.111610894561043" />
+      <entry key="H2" value="54.39549711673647" />
+      <entry key="H4" value="165.58196450589355" />
+      <entry key="D1" value="686.6218678971353" />
+      <entry key="W1" value="931.4715722267171" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000005868177" />
-      <entry key="S2" value="1.0063193088380462" />
-      <entry key="S5" value="1.1915810442490362" />
-      <entry key="S10" value="1.6142587218366469" />
-      <entry key="S30" value="2.347052154242636" />
-      <entry key="S60" value="2.6438887748828463" />
-      <entry key="M2" value="3.0339846718631427" />
-      <entry key="M5" value="6.63759301684089" />
-      <entry key="M10" value="14.084739028317395" />
-      <entry key="M15" value="20.807345983998893" />
-      <entry key="M30" value="38.29940824977021" />
-      <entry key="H1" value="67.82682316894565" />
-      <entry key="H2" value="119.28709307965602" />
-      <entry key="H4" value="195.08162999735893" />
-      <entry key="D1" value="414.25397023622025" />
-      <entry key="W1" value="499.2164282666905" />
+      <entry key="MS100" value="9.260630703608193E-68" />
+      <entry key="MS500" value="3.971391986465134E-14" />
+      <entry key="S2" value="5.95460654848227E-4" />
+      <entry key="S5" value="0.07730731777480784" />
+      <entry key="S10" value="0.4314481236666056" />
+      <entry key="S30" value="1.5118430772321543" />
+      <entry key="S60" value="2.117185235391021" />
+      <entry key="M2" value="2.5163481223479907" />
+      <entry key="M5" value="2.795224980528355" />
+      <entry key="M10" value="2.8956185114089084" />
+      <entry key="M15" value="2.9299664537198034" />
+      <entry key="M30" value="2.9846958119899445" />
+      <entry key="H1" value="4.530080668329494" />
+      <entry key="H2" value="21.010729819874584" />
+      <entry key="H4" value="78.81701056766161" />
+      <entry key="D1" value="356.8846426289397" />
+      <entry key="W1" value="491.1089452167434" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.8136818726105565E-15" />
-      <entry key="MS500" value="0.0011264509385036632" />
-      <entry key="S2" value="0.1900507531704854" />
-      <entry key="S5" value="0.7650320991729721" />
-      <entry key="S10" value="1.5882840242397191" />
-      <entry key="S30" value="2.9015764941699835" />
-      <entry key="S60" value="3.5906928806320915" />
-      <entry key="M2" value="4.611651130534208" />
-      <entry key="M5" value="11.329611894123603" />
-      <entry key="M10" value="27.688665017121906" />
-      <entry key="M15" value="44.09986308488701" />
-      <entry key="M30" value="92.84215328478953" />
-      <entry key="H1" value="183.68077069511642" />
-      <entry key="H2" value="339.27983801425074" />
-      <entry key="H4" value="564.411124697786" />
-      <entry key="D1" value="1190.4369950534067" />
-      <entry key="W1" value="1427.4077773955737" />
+      <entry key="MS100" value="0.9460576467255959" />
+      <entry key="MS500" value="0.988970916380938" />
+      <entry key="S2" value="0.9976330960880672" />
+      <entry key="S5" value="1.0759703103117286" />
+      <entry key="S10" value="1.5408348983392404" />
+      <entry key="S30" value="3.6253481630297" />
+      <entry key="S60" value="6.801878173768596" />
+      <entry key="M2" value="11.707635913793421" />
+      <entry key="M5" value="17.66874050748059" />
+      <entry key="M10" value="20.532254484479846" />
+      <entry key="M15" value="21.614998076472304" />
+      <entry key="M30" value="22.81930486574359" />
+      <entry key="H1" value="27.63766831188944" />
+      <entry key="H2" value="75.39966943774665" />
+      <entry key="H4" value="244.38729185358628" />
+      <entry key="D1" value="1043.4973879387526" />
+      <entry key="W1" value="1422.5787084469146" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -188,7 +170,7 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="ApiGatewayApplication" value="FAILED" />
+              <entry key="ApiGatewayApplication" value="STOPPED" />
               <entry key="JobServiceApplication" value="STOPPED" />
             </map>
           </value>
@@ -196,7 +178,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.JobServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fu.ats.ApiGatewayApplication" />
@@ -275,12 +257,25 @@
       <workItem from="1790072008262" duration="1720000" />
       <workItem from="1790313281190" duration="9219000" />
       <workItem from="1790324986563" duration="2488000" />
-      <workItem from="1790670934584" duration="5688000" />
+      <workItem from="1790670934584" duration="7032000" />
     </task>
+    <task id="LOCAL-00001" summary="Api gateway">
+      <option name="closed" value="true" />
+      <created>1790677181779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790677181779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Api gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api gateway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
