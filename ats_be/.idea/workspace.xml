@@ -5,9 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0b111de-6f93-4c64-b1fd-efbca4b2efc2" name="Changes" comment="Api gateway">
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/ApplicationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/client/client.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/client/job/JobClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/controller/ApplicationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/dto/ApplicationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/dto/ApplicationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/dto/JobView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/entity/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/entity/ApplicationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/entity/EvaluationNote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/entity/Interview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/entity/PipelineStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/entity/StageTransition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/repository/ApplicationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/repository/PipelineStageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/service/ApplicationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/service/impl/ApplicationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/application-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/dto/JobApplicationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/32f02949-0689-4da0-80b3-a600f69b6aa4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/32f02949-0689-4da0-80b3-a600f69b6aa4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/filters/LoggingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/filters/LoggingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/application-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/application-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/candidate-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/candidate-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/entity/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/entity/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats/infrastructure/persistence/entity/JobStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +51,11 @@
   <component name="DatabaseLocalColorSettings">
     <colors>
       <entry key="32f02949-0689-4da0-80b3-a600f69b6aa4" value="" />
+      <entry key="65a26383-116e-4d7a-8c0a-11a0dda3587a" value="" />
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="92" />
+    <option name="cachedIndexableFilesCount" value="99" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,61 +75,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000076538871633" />
-      <entry key="S5" value="1.0281229849738522" />
-      <entry key="S10" value="1.2259065980682227" />
-      <entry key="S30" value="2.2877224588898355" />
-      <entry key="S60" value="4.813472144559385" />
-      <entry key="M2" value="9.26984879547149" />
-      <entry key="M5" value="14.9089831869033" />
-      <entry key="M10" value="17.65510685271481" />
-      <entry key="M15" value="18.697514453123365" />
-      <entry key="M30" value="19.840958679959556" />
-      <entry key="H1" value="23.111610894561043" />
-      <entry key="H2" value="54.39549711673647" />
-      <entry key="H4" value="165.58196450589355" />
-      <entry key="D1" value="686.6218678971353" />
-      <entry key="W1" value="931.4715722267171" />
+      <entry key="MS100" value="4.2678121134184594E-7" />
+      <entry key="MS500" value="0.053284429726953346" />
+      <entry key="S2" value="0.572193578903289" />
+      <entry key="S5" value="1.2230710287441553" />
+      <entry key="S10" value="2.0555883790932046" />
+      <entry key="S30" value="4.548613822042638" />
+      <entry key="S60" value="7.2497035935549174" />
+      <entry key="M2" value="10.67541977454364" />
+      <entry key="M5" value="17.554219789788156" />
+      <entry key="M10" value="28.26795809989738" />
+      <entry key="M15" value="37.66037533939437" />
+      <entry key="M30" value="61.8324255195184" />
+      <entry key="H1" value="95.42538703451676" />
+      <entry key="H2" value="143.51588351620322" />
+      <entry key="H4" value="253.22726201474094" />
+      <entry key="D1" value="801.8776666038115" />
+      <entry key="W1" value="1078.008760918707" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="9.260630703608193E-68" />
-      <entry key="MS500" value="3.971391986465134E-14" />
-      <entry key="S2" value="5.95460654848227E-4" />
-      <entry key="S5" value="0.07730731777480784" />
-      <entry key="S10" value="0.4314481236666056" />
-      <entry key="S30" value="1.5118430772321543" />
-      <entry key="S60" value="2.117185235391021" />
-      <entry key="M2" value="2.5163481223479907" />
-      <entry key="M5" value="2.795224980528355" />
-      <entry key="M10" value="2.8956185114089084" />
-      <entry key="M15" value="2.9299664537198034" />
-      <entry key="M30" value="2.9846958119899445" />
-      <entry key="H1" value="4.530080668329494" />
-      <entry key="H2" value="21.010729819874584" />
-      <entry key="H4" value="78.81701056766161" />
-      <entry key="D1" value="356.8846426289397" />
-      <entry key="W1" value="491.1089452167434" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000004975263646" />
+      <entry key="S5" value="1.0045842477986555" />
+      <entry key="S10" value="1.1500953792728763" />
+      <entry key="S30" value="3.4799617260912403" />
+      <entry key="S60" value="7.226247228816861" />
+      <entry key="M2" value="11.996425508987937" />
+      <entry key="M5" value="22.101050981777256" />
+      <entry key="M10" value="36.76845762963646" />
+      <entry key="M15" value="48.14161573846177" />
+      <entry key="M30" value="70.56029763993321" />
+      <entry key="H1" value="92.36729151158669" />
+      <entry key="H2" value="117.40816254710613" />
+      <entry key="H4" value="173.10079734809827" />
+      <entry key="D1" value="462.96520169801676" />
+      <entry key="W1" value="613.2120531849471" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9460576467255959" />
-      <entry key="MS500" value="0.988970916380938" />
-      <entry key="S2" value="0.9976330960880672" />
-      <entry key="S5" value="1.0759703103117286" />
-      <entry key="S10" value="1.5408348983392404" />
-      <entry key="S30" value="3.6253481630297" />
-      <entry key="S60" value="6.801878173768596" />
-      <entry key="M2" value="11.707635913793421" />
-      <entry key="M5" value="17.66874050748059" />
-      <entry key="M10" value="20.532254484479846" />
-      <entry key="M15" value="21.614998076472304" />
-      <entry key="M30" value="22.81930486574359" />
-      <entry key="H1" value="27.63766831188944" />
-      <entry key="H2" value="75.39966943774665" />
-      <entry key="H4" value="244.38729185358628" />
-      <entry key="D1" value="1043.4973879387526" />
-      <entry key="W1" value="1422.5787084469146" />
+      <entry key="MS100" value="4.98541077005505E-4" />
+      <entry key="MS500" value="0.21906916665961054" />
+      <entry key="S2" value="0.8615671406688132" />
+      <entry key="S5" value="1.6441439297653648" />
+      <entry key="S10" value="2.760981105628657" />
+      <entry key="S30" value="7.688376543540853" />
+      <entry key="S60" value="14.186079858369533" />
+      <entry key="M2" value="22.454859543659932" />
+      <entry key="M5" value="39.50253478120354" />
+      <entry key="M10" value="64.90905405094405" />
+      <entry key="M15" value="85.69077175711084" />
+      <entry key="M30" value="132.31136221453394" />
+      <entry key="H1" value="187.73938029725426" />
+      <entry key="H2" value="260.8902034394026" />
+      <entry key="H4" value="426.3030353508647" />
+      <entry key="D1" value="1264.83125629265" />
+      <entry key="W1" value="1691.2185915393538" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -119,6 +154,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.ApplicationServiceApplication.executor": "Run",
     "Spring Boot.JobServiceApplication.executor": "Run",
     "Spring Boot.candidate-service.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -126,7 +162,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dieunt/Documents/FPTU/1_Training/26_FA/MSS301_SE1947/Projects/ats_be/infras/api-gateway/src/main/resources",
+    "last_opened_file_path": "/Users/dieunt/Documents/FPTU/1_Training/26_FA/MSS301_SE1947/Projects/ats_be/services/application-service/src/main/java/fu/ats",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -146,11 +182,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/application-service/src/main/java/fu/ats" />
+      <recent name="$PROJECT_DIR$/services/application-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/infras/api-gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence" />
       <recent name="$PROJECT_DIR$/services/cv-parse-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/services/cv-parse-service/src/main/java/fu/ats" />
-      <recent name="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/infrastructure/persistence/entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -171,6 +207,7 @@
           <value>
             <map>
               <entry key="ApiGatewayApplication" value="STOPPED" />
+              <entry key="ApplicationServiceApplication" value="STOPPED" />
               <entry key="JobServiceApplication" value="STOPPED" />
             </map>
           </value>
@@ -178,10 +215,27 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.JobServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ApplicationServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fu.ats.ApiGatewayApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="application-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fu.ats.ApplicationServiceApplication" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -234,6 +288,7 @@
       <item itemvalue="Spring Boot.CandidateServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.JobServiceApplication" />
+      <item itemvalue="Spring Boot.ApplicationServiceApplication" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -257,7 +312,10 @@
       <workItem from="1790072008262" duration="1720000" />
       <workItem from="1790313281190" duration="9219000" />
       <workItem from="1790324986563" duration="2488000" />
-      <workItem from="1790670934584" duration="7032000" />
+      <workItem from="1790670934584" duration="7152000" />
+      <workItem from="1790697596258" duration="892000" />
+      <workItem from="1790819589106" duration="56000" />
+      <workItem from="1790921077761" duration="7217000" />
     </task>
     <task id="LOCAL-00001" summary="Api gateway">
       <option name="closed" value="true" />
@@ -289,11 +347,6 @@
           <url>file://$PROJECT_DIR$/services/candidate-service/src/main/java/fu/he123456/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/services/application-service/src/main/java/fu/ats/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/services/notification-service/src/main/java/fu/ats/Main.java</url>

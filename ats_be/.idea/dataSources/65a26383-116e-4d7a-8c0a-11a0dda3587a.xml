@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.55">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>4728</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4768</IntrospectionStateNumber>
       <ServerVersion>17.6</ServerVersion>
       <StartupTime>1790903275</StartupTime>
       <TimeZones>true ACDT
@@ -808,7 +808,7 @@ false Zulu
 13664||10|C|G
 13664||-9223372036854775808|U|G
 13664||10|U|G</Grants>
-      <IntrospectionStateNumber>4728</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4767</IntrospectionStateNumber>
       <ObjectId>18995</ObjectId>
       <OwnerName>dieunt</OwnerName>
     </database>
@@ -822,7 +822,7 @@ false Zulu
 13664||10|C|G
 13664||-9223372036854775808|U|G
 13664||10|U|G</Grants>
-      <IntrospectionStateNumber>4715</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4735</IntrospectionStateNumber>
       <ObjectId>18657</ObjectId>
       <OwnerName>dieunt</OwnerName>
     </database>
@@ -856,6 +856,7 @@ false Zulu
 13664||10|C|G
 13664||-9223372036854775808|U|G
 13664||10|U|G</Grants>
+      <IntrospectionStateNumber>4768</IntrospectionStateNumber>
       <ObjectId>18688</ObjectId>
       <OwnerName>dieunt</OwnerName>
     </database>
@@ -883,6 +884,7 @@ false Zulu
 13664||10|C|G
 13664||-9223372036854775808|U|G
 13664||10|U|G</Grants>
+      <IntrospectionStateNumber>4729</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>dieunt</OwnerName>
     </database>
@@ -4345,11 +4347,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>4728</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>4728</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>4728</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>4767</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>4767</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>4767</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-10-02.06:27:02</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-10-02.07:04:24</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
@@ -7707,8 +7709,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
+      <LastIntrospectionL1Xid>4735</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>4735</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>4735</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-09-25.06:54:31</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-10-02.06:29:51</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
@@ -11066,8 +11071,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
+      <LastIntrospectionL1Xid>4768</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>4768</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>4768</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-09-29.09:15:11</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-10-02.07:55:53</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
@@ -14425,8 +14433,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
+      <LastIntrospectionL1Xid>4729</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>4729</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>4729</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-09-25.06:50:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-10-02.06:27:28</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
@@ -14434,350 +14445,675 @@ false Zulu
     </schema>
     <sequence id="1020" parent="287" name="evaluation_notes_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>18996</ObjectId>
+      <ObjectId>19041</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>4718</StateNumber>
+      <StateNumber>4749</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>dieunt</OwnerName>
     </sequence>
     <sequence id="1021" parent="287" name="interviews_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>19004</ObjectId>
+      <ObjectId>19049</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>4719</StateNumber>
+      <StateNumber>4750</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>dieunt</OwnerName>
     </sequence>
     <sequence id="1022" parent="287" name="pipeline_stages_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>19012</ObjectId>
+      <ObjectId>19057</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>4720</StateNumber>
+      <StateNumber>4751</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>dieunt</OwnerName>
     </sequence>
     <sequence id="1023" parent="287" name="stage_transitions_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>19018</ObjectId>
+      <ObjectId>19063</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>4721</StateNumber>
+      <StateNumber>4752</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>dieunt</OwnerName>
     </sequence>
     <table id="1024" parent="287" name="evaluation_notes">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>18997</ObjectId>
-      <StateNumber>4722</StateNumber>
+      <ObjectId>19042</ObjectId>
+      <StateNumber>4753</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
     <table id="1025" parent="287" name="interviews">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>19005</ObjectId>
-      <StateNumber>4719</StateNumber>
+      <ObjectId>19050</ObjectId>
+      <StateNumber>4759</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
-    <table id="1026" parent="287" name="pipeline_stages">
+    <table id="1026" parent="287" name="job_applications">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>19013</ObjectId>
-      <StateNumber>4722</StateNumber>
+      <ObjectId>19086</ObjectId>
+      <StateNumber>4758</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
-    <table id="1027" parent="287" name="stage_transitions">
+    <table id="1027" parent="287" name="pipeline_stages">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>19019</ObjectId>
-      <StateNumber>4723</StateNumber>
+      <ObjectId>19058</ObjectId>
+      <StateNumber>4753</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
-    <table id="1028" parent="775" name="departments">
+    <table id="1028" parent="287" name="stage_transitions">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>19064</ObjectId>
+      <StateNumber>4754</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>dieunt</OwnerName>
+    </table>
+    <table id="1029" parent="531" name="candidate_skills">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>18658</ObjectId>
+      <StateNumber>4603</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>dieunt</OwnerName>
+    </table>
+    <table id="1030" parent="531" name="candidates">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>18663</ObjectId>
+      <StateNumber>4603</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>dieunt</OwnerName>
+    </table>
+    <table id="1031" parent="531" name="skills">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>18671</ObjectId>
+      <StateNumber>4604</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>dieunt</OwnerName>
+    </table>
+    <table id="1032" parent="775" name="departments">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>18727</ObjectId>
       <StateNumber>4632</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
-    <table id="1029" parent="775" name="job_skills">
+    <table id="1033" parent="775" name="job_skills">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>18734</ObjectId>
       <StateNumber>4631</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
-    <table id="1030" parent="775" name="jobs">
+    <table id="1034" parent="775" name="jobs">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>18737</ObjectId>
       <StateNumber>4631</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>dieunt</OwnerName>
     </table>
-    <column id="1031" parent="1024" name="id">
+    <column id="1035" parent="1024" name="id">
       <GeneratedKind>identity-by-default</GeneratedKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>4718</StateNumber>
+      <StateNumber>4749</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>18996</SequenceId>
+      <SequenceId>19041</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="1032" parent="1024" name="author_id">
-      <NotNull>1</NotNull>
+    <column id="1036" parent="1024" name="stage_id">
       <Position>2</Position>
-      <StateNumber>4718</StateNumber>
-      <StoredType>varchar(100)|0s</StoredType>
-      <TypeId>1043</TypeId>
+      <StateNumber>4749</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
     </column>
-    <column id="1033" parent="1024" name="content">
+    <column id="1037" parent="1024" name="application_id">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>4718</StateNumber>
-      <StoredType>text|0s</StoredType>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="1034" parent="1024" name="application_id">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>4718</StateNumber>
+      <StateNumber>4749</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <column id="1035" parent="1024" name="stage_id">
-      <Position>5</Position>
-      <StateNumber>4718</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <TypeId>20</TypeId>
+    <column id="1038" parent="1024" name="author_id">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>4749</StateNumber>
+      <StoredType>varchar(100)|0s</StoredType>
+      <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="1036" parent="1024" name="fkgw8gyaqkl56vsi7x89uxrtmou">
+    <column id="1039" parent="1024" name="content">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>4749</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <foreign-key id="1040" parent="1024" name="fkgw8gyaqkl56vsi7x89uxrtmou">
       <ColNames>stage_id</ColNames>
-      <ObjectId>19026</ObjectId>
-      <StateNumber>4722</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>19013</RefTableId>
+      <ObjectId>19071</ObjectId>
+      <StateNumber>4753</StateNumber>
+      <RefKeyColPositions>3</RefKeyColPositions>
+      <RefTableId>19058</RefTableId>
     </foreign-key>
-    <index id="1037" parent="1024" name="evaluation_notes_pkey">
+    <foreign-key id="1041" parent="1024" name="fkl7apc37ubvimcbpbjlf2jtiot">
+      <ColNames>application_id</ColNames>
+      <ObjectId>19092</ObjectId>
+      <StateNumber>4758</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>19086</RefTableId>
+    </foreign-key>
+    <index id="1042" parent="1024" name="evaluation_notes_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19002</ObjectId>
+      <ObjectId>19047</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4718</StateNumber>
+      <StateNumber>4749</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1038" parent="1024" name="evaluation_notes_pkey">
+    <key id="1043" parent="1024" name="evaluation_notes_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19003</ObjectId>
+      <ObjectId>19048</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4718</StateNumber>
-      <UnderlyingIndexId>19002</UnderlyingIndexId>
+      <StateNumber>4749</StateNumber>
+      <UnderlyingIndexId>19047</UnderlyingIndexId>
     </key>
-    <column id="1039" parent="1025" name="id">
-      <GeneratedKind>identity-by-default</GeneratedKind>
-      <NotNull>1</NotNull>
+    <column id="1044" parent="1025" name="duration_minutes">
       <Position>1</Position>
-      <StateNumber>4719</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <SequenceId>19004</SequenceId>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="1040" parent="1025" name="duration_minutes">
-      <Position>2</Position>
-      <StateNumber>4719</StateNumber>
+      <StateNumber>4750</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1041" parent="1025" name="meeting_link">
+    <column id="1045" parent="1025" name="id">
+      <GeneratedKind>identity-by-default</GeneratedKind>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4750</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>19049</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="1046" parent="1025" name="scheduled_at">
+      <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>4719</StateNumber>
+      <StateNumber>4750</StateNumber>
+      <StoredType>timestamp(6) with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="1047" parent="1025" name="application_id">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>4750</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1048" parent="1025" name="meeting_link">
+      <Position>5</Position>
+      <StateNumber>4750</StateNumber>
       <StoredType>varchar(1000)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1042" parent="1025" name="scheduled_at">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>4719</StateNumber>
-      <StoredType>timestamp(6) with time zone|0s</StoredType>
-      <TypeId>1184</TypeId>
-    </column>
-    <column id="1043" parent="1025" name="application_id">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>4719</StateNumber>
-      <StoredType>uuid|0s</StoredType>
-      <TypeId>2950</TypeId>
-    </column>
-    <index id="1044" parent="1025" name="interviews_pkey">
+    <foreign-key id="1049" parent="1025" name="fkhejw7ucaax75651ee2p9i8as0">
+      <ColNames>application_id</ColNames>
+      <ObjectId>19097</ObjectId>
+      <StateNumber>4759</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>19086</RefTableId>
+    </foreign-key>
+    <index id="1050" parent="1025" name="interviews_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19010</ObjectId>
+      <ObjectId>19055</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4719</StateNumber>
+      <StateNumber>4750</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1045" parent="1025" name="interviews_pkey">
+    <key id="1051" parent="1025" name="interviews_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19011</ObjectId>
+      <ObjectId>19056</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4719</StateNumber>
-      <UnderlyingIndexId>19010</UnderlyingIndexId>
+      <StateNumber>4750</StateNumber>
+      <UnderlyingIndexId>19055</UnderlyingIndexId>
     </key>
-    <column id="1046" parent="1026" name="id">
-      <GeneratedKind>identity-by-default</GeneratedKind>
+    <check id="1052" parent="1026" name="job_applications_status_check">
+      <ColNames>status</ColNames>
+      <ObjectId>19089</ObjectId>
+      <Predicate>(status)::text = ANY ((ARRAY[&apos;SUBMITTED&apos;::character varying, &apos;IN_REVIEW&apos;::character varying, &apos;SHORTLISTED&apos;::character varying, &apos;INTERVIEWING&apos;::character varying, &apos;OFFERED&apos;::character varying, &apos;HIRED&apos;::character varying, &apos;REJECTED&apos;::character varying, &apos;WITHDRAWN&apos;::character varying])::text[])</Predicate>
+      <StateNumber>4757</StateNumber>
+    </check>
+    <column id="1053" parent="1026" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>4720</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <SequenceId>19012</SequenceId>
-      <TypeId>20</TypeId>
+      <StateNumber>4757</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
     </column>
-    <column id="1047" parent="1026" name="color">
+    <column id="1054" parent="1026" name="applied_at">
+      <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>4720</StateNumber>
-      <StoredType>varchar(30)|0s</StoredType>
-      <TypeId>1043</TypeId>
+      <StateNumber>4757</StateNumber>
+      <StoredType>timestamp(6) with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
     </column>
-    <column id="1048" parent="1026" name="is_default">
+    <column id="1055" parent="1026" name="candidate_id">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>4720</StateNumber>
+      <StateNumber>4757</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1056" parent="1026" name="cv_id">
+      <Position>4</Position>
+      <StateNumber>4757</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1057" parent="1026" name="department_id">
+      <Position>5</Position>
+      <StateNumber>4757</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1058" parent="1026" name="job_id">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>4757</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1059" parent="1026" name="status">
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <StateNumber>4757</StateNumber>
+      <StoredType>varchar(50)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1060" parent="1026" name="transferred_from">
+      <Position>8</Position>
+      <StateNumber>4757</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="1061" parent="1026" name="pipeline_stage_id">
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+      <StateNumber>4757</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="1062" parent="1026" name="fksdqw089fklaeoshlot8qf27m">
+      <ColNames>pipeline_stage_id</ColNames>
+      <ObjectId>19102</ObjectId>
+      <StateNumber>4760</StateNumber>
+      <RefKeyColPositions>3</RefKeyColPositions>
+      <RefTableId>19058</RefTableId>
+    </foreign-key>
+    <index id="1063" parent="1026" name="job_applications_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19090</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4757</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="1064" parent="1026" name="job_applications_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19091</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4757</StateNumber>
+      <UnderlyingIndexId>19090</UnderlyingIndexId>
+    </key>
+    <column id="1065" parent="1027" name="is_default">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4751</StateNumber>
       <StoredType>boolean|0s</StoredType>
       <TypeId>16</TypeId>
     </column>
-    <column id="1049" parent="1026" name="stage_name">
+    <column id="1066" parent="1027" name="stage_order">
       <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>4720</StateNumber>
-      <StoredType>varchar(100)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="1050" parent="1026" name="stage_order">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>4720</StateNumber>
+      <Position>2</Position>
+      <StateNumber>4751</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <index id="1051" parent="1026" name="pipeline_stages_pkey">
+    <column id="1067" parent="1027" name="id">
+      <GeneratedKind>identity-by-default</GeneratedKind>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>4751</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>19057</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="1068" parent="1027" name="color">
+      <Position>4</Position>
+      <StateNumber>4751</StateNumber>
+      <StoredType>varchar(30)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1069" parent="1027" name="stage_name">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>4751</StateNumber>
+      <StoredType>varchar(100)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="1070" parent="1027" name="pipeline_stages_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19016</ObjectId>
+      <ObjectId>19061</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4720</StateNumber>
+      <StateNumber>4751</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1052" parent="1026" name="pipeline_stages_pkey">
+    <key id="1071" parent="1027" name="pipeline_stages_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19017</ObjectId>
+      <ObjectId>19062</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4720</StateNumber>
-      <UnderlyingIndexId>19016</UnderlyingIndexId>
+      <StateNumber>4751</StateNumber>
+      <UnderlyingIndexId>19061</UnderlyingIndexId>
     </key>
-    <column id="1053" parent="1027" name="id">
-      <GeneratedKind>identity-by-default</GeneratedKind>
-      <NotNull>1</NotNull>
+    <column id="1072" parent="1028" name="from_stage_id">
       <Position>1</Position>
-      <StateNumber>4721</StateNumber>
+      <StateNumber>4752</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>19018</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="1054" parent="1027" name="moved_at">
+    <column id="1073" parent="1028" name="id">
+      <GeneratedKind>identity-by-default</GeneratedKind>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>4721</StateNumber>
+      <StateNumber>4752</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>19063</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="1074" parent="1028" name="moved_at">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>4752</StateNumber>
       <StoredType>timestamp(6) with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <column id="1055" parent="1027" name="notes">
-      <Position>3</Position>
-      <StateNumber>4721</StateNumber>
-      <StoredType>text|0s</StoredType>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="1056" parent="1027" name="application_id">
+    <column id="1075" parent="1028" name="to_stage_id">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>4721</StateNumber>
+      <StateNumber>4752</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="1076" parent="1028" name="application_id">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>4752</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <column id="1057" parent="1027" name="from_stage_id">
-      <Position>5</Position>
-      <StateNumber>4721</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="1058" parent="1027" name="to_stage_id">
-      <NotNull>1</NotNull>
+    <column id="1077" parent="1028" name="notes">
       <Position>6</Position>
-      <StateNumber>4721</StateNumber>
-      <StoredType>bigint|0s</StoredType>
-      <TypeId>20</TypeId>
+      <StateNumber>4752</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
     </column>
-    <foreign-key id="1059" parent="1027" name="fkh5wm11555u18dr6gjj97d13e2">
+    <foreign-key id="1078" parent="1028" name="fkh5wm11555u18dr6gjj97d13e2">
       <ColNames>from_stage_id</ColNames>
-      <ObjectId>19031</ObjectId>
-      <StateNumber>4723</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>19013</RefTableId>
+      <ObjectId>19076</ObjectId>
+      <StateNumber>4754</StateNumber>
+      <RefKeyColPositions>3</RefKeyColPositions>
+      <RefTableId>19058</RefTableId>
     </foreign-key>
-    <foreign-key id="1060" parent="1027" name="fkndt4epugfipx73b8v507k8o0l">
+    <foreign-key id="1079" parent="1028" name="fkndt4epugfipx73b8v507k8o0l">
       <ColNames>to_stage_id</ColNames>
-      <ObjectId>19036</ObjectId>
-      <StateNumber>4724</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>19013</RefTableId>
+      <ObjectId>19081</ObjectId>
+      <StateNumber>4755</StateNumber>
+      <RefKeyColPositions>3</RefKeyColPositions>
+      <RefTableId>19058</RefTableId>
     </foreign-key>
-    <index id="1061" parent="1027" name="stage_transitions_pkey">
+    <foreign-key id="1080" parent="1028" name="fkdj3l8ayaneu16q8gpcancebrr">
+      <ColNames>application_id</ColNames>
+      <ObjectId>19107</ObjectId>
+      <StateNumber>4761</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>19086</RefTableId>
+    </foreign-key>
+    <index id="1081" parent="1028" name="stage_transitions_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19024</ObjectId>
+      <ObjectId>19069</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4721</StateNumber>
+      <StateNumber>4752</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1062" parent="1027" name="stage_transitions_pkey">
+    <key id="1082" parent="1028" name="stage_transitions_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19025</ObjectId>
+      <ObjectId>19070</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>4721</StateNumber>
-      <UnderlyingIndexId>19024</UnderlyingIndexId>
+      <StateNumber>4752</StateNumber>
+      <UnderlyingIndexId>19069</UnderlyingIndexId>
     </key>
-    <column id="1063" parent="1028" name="id">
+    <column id="1083" parent="1029" name="date">
+      <Position>1</Position>
+      <StateNumber>4600</StateNumber>
+      <StoredType>date|0s</StoredType>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="1084" parent="1029" name="candidate_id">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4600</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1085" parent="1029" name="skill_id">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>4600</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="1086" parent="1029" name="fkk71gu2subkaxroroxevtc6lu6">
+      <ColNames>candidate_id</ColNames>
+      <ObjectId>18678</ObjectId>
+      <StateNumber>4603</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>18663</RefTableId>
+    </foreign-key>
+    <foreign-key id="1087" parent="1029" name="fk2fcvgl75ge1wjul9sq4e6aww3">
+      <ColNames>skill_id</ColNames>
+      <ObjectId>18683</ObjectId>
+      <StateNumber>4604</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>18671</RefTableId>
+    </foreign-key>
+    <index id="1088" parent="1029" name="candidate_skills_pkey">
+      <ColNames>candidate_id
+skill_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18661</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4600</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="1089" parent="1029" name="candidate_skills_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18662</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4600</StateNumber>
+      <UnderlyingIndexId>18661</UnderlyingIndexId>
+    </key>
+    <check id="1090" parent="1030" name="candidates_status_check">
+      <ColNames>status</ColNames>
+      <ObjectId>18666</ObjectId>
+      <Predicate>(status)::text = ANY ((ARRAY[&apos;ACTIVE&apos;::character varying, &apos;INACTIVE&apos;::character varying])::text[])</Predicate>
+      <StateNumber>4601</StateNumber>
+    </check>
+    <column id="1091" parent="1030" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1092" parent="1030" name="auth_provider">
+      <Position>2</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(50)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1093" parent="1030" name="email">
+      <Position>3</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1094" parent="1030" name="full_name">
+      <Position>4</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1095" parent="1030" name="is_duplicate">
+      <Position>5</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>boolean|0s</StoredType>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="1096" parent="1030" name="oauth_provider_id">
+      <Position>6</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1097" parent="1030" name="password_hash">
+      <Position>7</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1098" parent="1030" name="phone">
+      <Position>8</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(30)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1099" parent="1030" name="source">
+      <Position>9</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(150)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1100" parent="1030" name="status">
+      <Position>10</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(50)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1101" parent="1030" name="utm_campaign">
+      <Position>11</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1102" parent="1030" name="utm_medium">
+      <Position>12</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(150)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1103" parent="1030" name="utm_source">
+      <Position>13</Position>
+      <StateNumber>4601</StateNumber>
+      <StoredType>varchar(150)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="1104" parent="1030" name="candidates_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18669</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4601</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="1105" parent="1030" name="candidates_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18670</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4601</StateNumber>
+      <UnderlyingIndexId>18669</UnderlyingIndexId>
+    </key>
+    <column id="1106" parent="1031" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4602</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="1107" parent="1031" name="category">
+      <Position>2</Position>
+      <StateNumber>4602</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1108" parent="1031" name="skill_name">
+      <Position>3</Position>
+      <StateNumber>4602</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="1109" parent="1031" name="skills_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18676</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4602</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="1110" parent="1031" name="skills_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18677</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4602</StateNumber>
+      <UnderlyingIndexId>18676</UnderlyingIndexId>
+    </key>
+    <column id="1111" parent="1032" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>4628</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <column id="1064" parent="1028" name="department_name">
+    <column id="1112" parent="1032" name="department_name">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4628</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1065" parent="1028" name="description">
+    <column id="1113" parent="1032" name="description">
       <Position>3</Position>
       <StateNumber>4628</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="1066" parent="1028" name="manager_id">
+    <column id="1114" parent="1032" name="manager_id">
       <Position>4</Position>
       <StateNumber>4628</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
-    <index id="1067" parent="1028" name="departments_pkey">
+    <index id="1115" parent="1032" name="departments_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18732</ObjectId>
@@ -14786,160 +15122,160 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1068" parent="1028" name="departments_pkey">
+    <key id="1116" parent="1032" name="departments_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18733</ObjectId>
       <Primary>1</Primary>
       <StateNumber>4628</StateNumber>
       <UnderlyingIndexId>18732</UnderlyingIndexId>
     </key>
-    <column id="1069" parent="1029" name="job_id">
+    <column id="1117" parent="1033" name="job_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>4629</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <column id="1070" parent="1029" name="skill_id">
+    <column id="1118" parent="1033" name="skill_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4629</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <foreign-key id="1071" parent="1029" name="fk1gb74tysr9vkypwivvvovxq1f">
+    <foreign-key id="1119" parent="1033" name="fk1gb74tysr9vkypwivvvovxq1f">
       <ColNames>job_id</ColNames>
       <ObjectId>18745</ObjectId>
       <StateNumber>4631</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18737</RefTableId>
     </foreign-key>
-    <check id="1072" parent="1030" name="jobs_status_check">
+    <check id="1120" parent="1034" name="jobs_status_check">
       <ColNames>status</ColNames>
       <ObjectId>18740</ObjectId>
       <Predicate>(status)::text = ANY ((ARRAY[&apos;DRAFT&apos;::character varying, &apos;PUBLISHED&apos;::character varying, &apos;CLOSED&apos;::character varying])::text[])</Predicate>
       <StateNumber>4630</StateNumber>
     </check>
-    <column id="1073" parent="1030" name="id">
+    <column id="1121" parent="1034" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <column id="1074" parent="1030" name="created_at">
+    <column id="1122" parent="1034" name="created_at">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>timestamp(6) with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <column id="1075" parent="1030" name="currency">
+    <column id="1123" parent="1034" name="currency">
       <Position>3</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(3)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1076" parent="1030" name="deadline">
+    <column id="1124" parent="1034" name="deadline">
       <Position>4</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1077" parent="1030" name="description">
+    <column id="1125" parent="1034" name="description">
       <Position>5</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="1078" parent="1030" name="employment_type">
+    <column id="1126" parent="1034" name="employment_type">
       <Position>6</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1079" parent="1030" name="location">
+    <column id="1127" parent="1034" name="location">
       <Position>7</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(500)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1080" parent="1030" name="published_at">
+    <column id="1128" parent="1034" name="published_at">
       <Position>8</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1081" parent="1030" name="recruiter_id">
+    <column id="1129" parent="1034" name="recruiter_id">
       <Position>9</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
-    <column id="1082" parent="1030" name="salary_max">
+    <column id="1130" parent="1034" name="salary_max">
       <Position>10</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>numeric(15,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="1083" parent="1030" name="salary_min">
+    <column id="1131" parent="1034" name="salary_min">
       <Position>11</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>numeric(15,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="1084" parent="1030" name="status">
+    <column id="1132" parent="1034" name="status">
       <Position>12</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1085" parent="1030" name="title">
+    <column id="1133" parent="1034" name="title">
       <NotNull>1</NotNull>
       <Position>13</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(500)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1086" parent="1030" name="updated_at">
+    <column id="1134" parent="1034" name="updated_at">
       <Position>14</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>timestamp(6) with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <column id="1087" parent="1030" name="utm_medium">
+    <column id="1135" parent="1034" name="utm_medium">
       <Position>15</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(150)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1088" parent="1030" name="utm_source">
+    <column id="1136" parent="1034" name="utm_source">
       <Position>16</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(150)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1089" parent="1030" name="work_mode">
+    <column id="1137" parent="1034" name="work_mode">
       <Position>17</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1090" parent="1030" name="department_id">
+    <column id="1138" parent="1034" name="department_id">
       <NotNull>1</NotNull>
       <Position>18</Position>
       <StateNumber>4630</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <foreign-key id="1091" parent="1030" name="fkt27140un7et9j2mqcevbh4shk">
+    <foreign-key id="1139" parent="1034" name="fkt27140un7et9j2mqcevbh4shk">
       <ColNames>department_id</ColNames>
       <ObjectId>18750</ObjectId>
       <StateNumber>4632</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>18727</RefTableId>
     </foreign-key>
-    <index id="1092" parent="1030" name="jobs_pkey">
+    <index id="1140" parent="1034" name="jobs_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18743</ObjectId>
@@ -14948,7 +15284,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1093" parent="1030" name="jobs_pkey">
+    <key id="1141" parent="1034" name="jobs_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18744</ObjectId>
       <Primary>1</Primary>

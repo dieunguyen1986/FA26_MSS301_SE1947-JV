@@ -1,17 +1,18 @@
 package fu.ats.api.rest;
 
 import fu.ats.api.dto.CreateJobRequest;
-import fu.ats.api.dto.JobResponse;
+import fu.ats.api.dto.JobApplicationResponse;
 import fu.ats.application.command.JobCommand;
 import fu.ats.application.port.in.CreateJobPort;
 import fu.ats.domain.aggregate.JobAggregate;
+import fu.ats.infrastructure.persistence.entity.JobStatus;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/jobs")
@@ -38,5 +39,11 @@ public class JobController {
 
         return ResponseEntity.ok(jobAggregate);
 
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<JobApplicationResponse> getJob(@Valid @PathVariable("id") UUID id) {
+
+        return ResponseEntity.ok(new JobApplicationResponse(id, "Fullstack Java Dev", JobStatus.PUBLISHED.toString(), LocalDate.of(2026, 12, 31)));
     }
 }
