@@ -1,12 +1,7 @@
 package fu.ats.dto;
 
 import fu.ats.entity.ApplicationStatus;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
@@ -24,6 +19,8 @@ public class ApplicationResponse {
     private UUID jobId;
 
     private UUID candidateId;
+
+    private CandidateView candidate;
 
     private UUID cvId;
 

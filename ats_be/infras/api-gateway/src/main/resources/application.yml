@@ -9,21 +9,21 @@ spring:
         webflux:
           routes:
             - id: job-service
-              uri: http://localhost:8081
+              uri: lb://job-service
               predicates:
-                - Path=/api/v1/jobs
+                - Path=/api/v1/jobs/**
             - id: candidate-service
-              uri: http://localhost:8082
+              uri: lb://candidate-service
               predicates:
-                - Path=/api/v1/candidates
+                - Path=/api/v1/candidates/**
             - id: notification-service
-              uri: http://localhost:8084
+              uri: lb://notification-service
               predicates:
                 - Path=/api/v1/notifications
             - id: application-service
-              uri: http://localhost:8083
+              uri: lb://application-service
               predicates:
-                - Path=/api/v1/applications
+                - Path=/api/v1/applications/**
 #              filters:
 #                - args: RequestRateLimiter
 #                  name:
@@ -35,6 +35,16 @@ spring:
 #                    empty-key-status-code: 403
 
             - id: cv-parse-service
-              uri: http://localhost:8085
+              uri: lb://cv-parse-service
               predicates:
-                - Path=/api/v1/cvparses
+                - Path=/api/v1/cvparses/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # Địa chỉ Eureka Server
+    fetch-registry: true      # Tải registry về local cache
+    register-with-eureka: true  # Đăng ký bản thân vào registry
+  instance:
+    prefer-ip-address: true    # Dùng IP thay hostname - quan trọng trong Docker
+    lease-renewal-interval-in-seconds: 10   # Heartbeat mỗi 10s (dev)
+    lease-expiration-duration-in-seconds: 30  # Expiry sau 30s không có heartbeat

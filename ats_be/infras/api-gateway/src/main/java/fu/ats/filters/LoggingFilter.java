@@ -19,7 +19,7 @@ public class LoggingFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         log.info("Request {} {} {}", request.getMethod(), request.getURI(), request.getHeaders().get("X-Web-Client"));
 
-        String correlationId = request.getHeaders().get(CORRELATION_ID).get(0);
+        String correlationId = request.getHeaders().getFirst(CORRELATION_ID);
 
         log.info("Correlation Id {}", correlationId);
 

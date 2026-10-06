@@ -40,5 +40,11 @@
             <scope>annotationProcessor</scope>
         </dependency>
 
+        <!-- Eureka Client - đăng ký service vào registry -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

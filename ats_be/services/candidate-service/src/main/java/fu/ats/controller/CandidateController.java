@@ -6,16 +6,21 @@ import fu.ats.entity.Candidates;
 import fu.ats.service.CandidateService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
 @RestController
-// @RestController = @Controller + @ResponseBody
 @RequestMapping("/api/v1/candidates")
 @RequiredArgsConstructor
+@Slf4j
 public class CandidateController {
+    @Value("${server.port}")
+    private String port;
+
     private final CandidateService candidateService;
 
     @PostMapping
@@ -29,7 +34,8 @@ public class CandidateController {
     public ResponseEntity<CandidateResponse> getCandidateById(
             @PathVariable("candidateId") UUID candidateId
     ) {
+        log.info("getCandidateById {}", port, candidateId);
+
         return ResponseEntity.ok(candidateService.findById(candidateId));
     }
-
 }

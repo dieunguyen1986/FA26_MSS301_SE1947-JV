@@ -8,6 +8,8 @@ import fu.ats.domain.aggregate.JobAggregate;
 import fu.ats.infrastructure.persistence.entity.JobStatus;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +19,11 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/v1/jobs")
 @RequiredArgsConstructor
+@Slf4j
 public class JobController {
+    @Value("${server.port}") // SpEL
+    private String port;
+
     private final CreateJobPort createJobPort;
 
     @PostMapping
@@ -43,6 +49,8 @@ public class JobController {
 
     @GetMapping("/{id}")
     public ResponseEntity<JobApplicationResponse> getJob(@Valid @PathVariable("id") UUID id) {
+
+        log.info("getJob {} - {}", port, id);
 
         return ResponseEntity.ok(new JobApplicationResponse(id, "Fullstack Java Dev", JobStatus.PUBLISHED.toString(), LocalDate.of(2026, 12, 31)));
     }

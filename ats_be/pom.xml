@@ -15,6 +15,7 @@
         <module>services/application-service</module>
         <module>services/cv-parse-service</module>
         <module>services/notification-service</module>
+        <module>infras/eureka-server</module>
     </modules>
 
     <properties>
