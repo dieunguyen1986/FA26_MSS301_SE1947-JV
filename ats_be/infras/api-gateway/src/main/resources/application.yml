@@ -38,6 +38,33 @@ spring:
               uri: lb://cv-parse-service
               predicates:
                 - Path=/api/v1/cvparses/**
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}  # THAY THẾ BẰNG CLIENT ID CỦA BẠN TỪ GOOGLE CLOUD CONSOLE
+            client-secret: ${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} # THAY THẾ BẰNG CLIENT SECRET CỦA BẠN TỪ GOOGLE CLOUD CONSOLE
+            scope:
+              - openid # Yêu cầu ID Token (định danh người dùng)
+              - profile # Yêu cầu thông tin hồ sơ cơ bản (tên, ảnh)
+              - email # Yêu cầu địa chỉ email
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}" # URI chuyển hướng sau khi xác thực thành công
+            # Lưu ý: redirect-uri này phải khớp với URI đã đăng ký trong Google Cloud Console
+            # Đối với demo, nó sẽ là http://localhost:8080/login/oauth2/code/google
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth # Endpoint ủy quyền của Google
+            token-uri: https://oauth2.googleapis.com/token # Endpoint lấy token của Google
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo # Endpoint thông tin người dùng của Google
+            jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs # Endpoint JWK Set của Google
+      #          facebook:
+
+#      resourceserver:
+#        jwt:
+#          issuer-uri: https://dev-mtxk0jge061vtf4h.us.auth0.com/
+#          audiences: https://lms-api.example.com
+
 eureka:
   client:
     service-url:
