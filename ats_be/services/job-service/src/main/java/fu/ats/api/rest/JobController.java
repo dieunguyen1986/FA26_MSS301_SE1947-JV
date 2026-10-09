@@ -7,6 +7,7 @@ import fu.ats.application.port.in.CreateJobPort;
 import fu.ats.domain.aggregate.JobAggregate;
 import fu.ats.infrastructure.persistence.entity.JobStatus;
 import jakarta.validation.Valid;
+import jakarta.ws.rs.HeaderParam;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -48,9 +49,12 @@ public class JobController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<JobApplicationResponse> getJob(@Valid @PathVariable("id") UUID id) {
+    public ResponseEntity<JobApplicationResponse> getJob(@Valid @PathVariable("id") UUID id,             @RequestHeader("X-User-Id") String userId,
+                                                         @RequestHeader(value = "X-User-Email", required = false) String email
+    ) {
 
         log.info("getJob {} - {}", port, id);
+        log.info("getJob {} - {}", userId, email);
 
         return ResponseEntity.ok(new JobApplicationResponse(id, "Fullstack Java Dev", JobStatus.PUBLISHED.toString(), LocalDate.of(2026, 12, 31)));
     }

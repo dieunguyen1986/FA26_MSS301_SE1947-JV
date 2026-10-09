@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0b111de-6f93-4c64-b1fd-efbca4b2efc2" name="Changes" comment="Api gateway">
-      <change afterPath="$PROJECT_DIR$/docs/microservice-security-guide-sequence-diagram.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/microservice-security-guide-v1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/SecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infras/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/config/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/java/fu/ats/filters/SecurityFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infras/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/job-service/src/main/java/fu/ats/api/rest/JobController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="150" />
+    <option name="cachedIndexableFilesCount" value="151" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000005936022927" />
-      <entry key="S2" value="1.0277570873700752" />
-      <entry key="S5" value="1.238423773383649" />
-      <entry key="S10" value="1.4882985106960631" />
-      <entry key="S30" value="1.9114693244218417" />
-      <entry key="S60" value="3.362196378075132" />
-      <entry key="M2" value="7.625727072853819" />
-      <entry key="M5" value="16.439830629643854" />
-      <entry key="M10" value="24.46617689437265" />
-      <entry key="M15" value="30.821758886631063" />
-      <entry key="M30" value="45.95972630838865" />
-      <entry key="H1" value="65.82657981061773" />
-      <entry key="H2" value="125.57722917062456" />
-      <entry key="H4" value="312.97926385086595" />
-      <entry key="D1" value="1309.4950385000573" />
-      <entry key="W1" value="1894.3488637279029" />
+      <entry key="MS100" value="1.0000000000000127" />
+      <entry key="MS500" value="1.0017213893610064" />
+      <entry key="S2" value="1.2901361196646992" />
+      <entry key="S5" value="1.9059840263232055" />
+      <entry key="S10" value="2.341531676241944" />
+      <entry key="S30" value="2.749406148843594" />
+      <entry key="S60" value="2.871615799988861" />
+      <entry key="M2" value="3.130719552710812" />
+      <entry key="M5" value="9.005382245047098" />
+      <entry key="M10" value="24.41513645272398" />
+      <entry key="M15" value="37.4636846180326" />
+      <entry key="M30" value="64.20729743752182" />
+      <entry key="H1" value="93.98798874024536" />
+      <entry key="H2" value="157.44887068582096" />
+      <entry key="H4" value="343.25183393667567" />
+      <entry key="D1" value="1346.295704048541" />
+      <entry key="W1" value="1940.841155379927" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.31031655584713E-4" />
-      <entry key="MS500" value="0.22909579024928273" />
-      <entry key="S2" value="0.7395438040066228" />
-      <entry key="S5" value="1.3105202180358757" />
-      <entry key="S10" value="2.028892682272829" />
-      <entry key="S30" value="3.17483925253127" />
-      <entry key="S60" value="4.102227932388474" />
-      <entry key="M2" value="5.6625171853258" />
-      <entry key="M5" value="9.055698880967066" />
-      <entry key="M10" value="12.632982225491478" />
-      <entry key="M15" value="14.728687031919435" />
-      <entry key="M30" value="17.683666251252145" />
-      <entry key="H1" value="19.95743017975477" />
-      <entry key="H2" value="27.41789668349776" />
-      <entry key="H4" value="63.25126176731309" />
-      <entry key="D1" value="406.4880914939673" />
-      <entry key="W1" value="659.8706522981403" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.8658521773541782E-197" />
+      <entry key="S2" value="6.572329197381036E-50" />
+      <entry key="S5" value="2.1236733805668896E-20" />
+      <entry key="S10" value="1.4572828759602225E-10" />
+      <entry key="S30" value="5.262497052637815E-4" />
+      <entry key="S60" value="0.02320142167669041" />
+      <entry key="M2" value="0.20133335926248325" />
+      <entry key="M5" value="2.0903755302900207" />
+      <entry key="M10" value="6.861609108959698" />
+      <entry key="M15" value="10.869053296024271" />
+      <entry key="M30" value="17.924141072441277" />
+      <entry key="H1" value="23.68480415395452" />
+      <entry key="H2" value="32.87541348311535" />
+      <entry key="H4" value="68.53367925239122" />
+      <entry key="D1" value="411.75200048219926" />
+      <entry key="W1" value="668.0063774142376" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.005758864130057874" />
-      <entry key="MS500" value="0.35821488319783057" />
-      <entry key="S2" value="1.032671304669469" />
-      <entry key="S5" value="2.045446820358932" />
-      <entry key="S10" value="3.1809518760868865" />
-      <entry key="S30" value="4.929787603312953" />
-      <entry key="S60" value="7.335739489240968" />
-      <entry key="M2" value="13.13995606141437" />
-      <entry key="M5" value="25.346175343573396" />
-      <entry key="M10" value="36.98513589222168" />
-      <entry key="M15" value="45.46109997202115" />
-      <entry key="M30" value="63.590119265787465" />
-      <entry key="H1" value="85.75441831253129" />
-      <entry key="H2" value="152.97725603227946" />
-      <entry key="H4" value="376.21567714936435" />
-      <entry key="D1" value="1715.9717744958725" />
-      <entry key="W1" value="2554.21695161997" />
+      <entry key="MS100" value="0.004645340292991082" />
+      <entry key="MS500" value="0.34320498988120635" />
+      <entry key="S2" value="1.0533330512206092" />
+      <entry key="S5" value="1.8024738782125838" />
+      <entry key="S10" value="2.287994577941311" />
+      <entry key="S30" value="2.731628004115404" />
+      <entry key="S60" value="2.8852862228163754" />
+      <entry key="M2" value="3.3256985968078805" />
+      <entry key="M5" value="11.07710477034995" />
+      <entry key="M10" value="31.237299415822786" />
+      <entry key="M15" value="48.28759684498981" />
+      <entry key="M30" value="82.09164818650567" />
+      <entry key="H1" value="117.64585477088654" />
+      <entry key="H2" value="190.30655388422844" />
+      <entry key="H4" value="411.7705633750856" />
+      <entry key="D1" value="1758.0362983509995" />
+      <entry key="W1" value="2608.844949678072" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -202,18 +201,19 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationServiceApplication2">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fu.ats.ApiGatewayApplication" />
       <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
+        <option name="IS_ENABLED" value="true" />
         <option name="IS_SUBST" value="false" />
         <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
         <option name="IS_IGNORE_MISSING_FILES" value="false" />
         <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
         <ENTRIES>
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          <ENTRY IS_ENABLED="true" PARSER="env" IS_EXECUTABLE="false" PATH="infras/api-gateway/.env" />
         </ENTRIES>
       </extension>
       <method v="2">
@@ -407,7 +407,8 @@
       <workItem from="1791338151559" duration="856000" />
       <workItem from="1791478394501" duration="1724000" />
       <workItem from="1791512647384" duration="3603000" />
-      <workItem from="1791531213765" duration="2127000" />
+      <workItem from="1791531213765" duration="2227000" />
+      <workItem from="1791533872641" duration="1264000" />
     </task>
     <task id="LOCAL-00001" summary="Api gateway">
       <option name="closed" value="true" />

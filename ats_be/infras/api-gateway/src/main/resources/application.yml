@@ -44,7 +44,7 @@ spring:
         registration:
           google:
             client-id: ${GOOGLE_CLIENT_ID}  # THAY THẾ BẰNG CLIENT ID CỦA BẠN TỪ GOOGLE CLOUD CONSOLE
-            client-secret: ${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} # THAY THẾ BẰNG CLIENT SECRET CỦA BẠN TỪ GOOGLE CLOUD CONSOLE
+            client-secret: ${GOOGLE_CLIENT_SECRET} # THAY THẾ BẰNG CLIENT SECRET CỦA BẠN TỪ GOOGLE CLOUD CONSOLE
             scope:
               - openid # Yêu cầu ID Token (định danh người dùng)
               - profile # Yêu cầu thông tin hồ sơ cơ bản (tên, ảnh)
@@ -60,10 +60,9 @@ spring:
             jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs # Endpoint JWK Set của Google
       #          facebook:
 
-#      resourceserver:
-#        jwt:
-#          issuer-uri: https://dev-mtxk0jge061vtf4h.us.auth0.com/
-#          audiences: https://lms-api.example.com
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
 
 eureka:
   client:
@@ -75,3 +74,8 @@ eureka:
     prefer-ip-address: true    # Dùng IP thay hostname - quan trọng trong Docker
     lease-renewal-interval-in-seconds: 10   # Heartbeat mỗi 10s (dev)
     lease-expiration-duration-in-seconds: 30  # Expiry sau 30s không có heartbeat
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.cloud.gateway: DEBUG
